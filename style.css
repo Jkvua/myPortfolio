@@ -1,98 +1,149 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Jersey+25+Charted&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
-*{
-    padding: 0%;
-    margin: 0;
-    outline: none;
-    border: none;
-    box-sizing:  border-box;
+* {
+  font-family: "kanit", "sans-serif";
 }
 
-img {
-    width: 100%;
-    display: flex;
-}
-
-a{
-    text-decoration: none;
+a {
+  text-decoration: none;
+  color: #fff;
 }
 
 body {
-    font-family: 'Poppions', sans-serif;
-    background: rgb(13, 31, 21);
+  color: #fff;
+  background-color: #def784;
+  background-image: radial-gradient(
+      at 9% 89%,
+      hsla(215, 90%, 73%, 1) 0px,
+      transparent 50%
+    ),
+    radial-gradient(at 72% 6%, hsla(331, 74%, 64%, 1) 0px, transparent 50%),
+    radial-gradient(at 24% 19%, hsla(14, 90%, 74%, 1) 0px, transparent 50%),
+    radial-gradient(at 65% 6%, hsla(6, 79%, 76%, 1) 0px, transparent 50%),
+    radial-gradient(at 20% 98%, hsla(316, 72%, 64%, 1) 0px, transparent 50%),
+    radial-gradient(at 44% 9%, hsla(40, 96%, 77%, 1) 0px, transparent 50%),
+    radial-gradient(at 10% 9%, hsla(76, 65%, 63%, 1) 0px, transparent 50%);
+  min-height: 100vh;
 }
 
-nav {
-    max-width: 1200px;
-    margin: left;
-    padding: 2rem 1rem;
+.container {
     display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 2rem;
+    justify-content: center;
 }
 
-.nav-logo {
-    max-width: 700px;
+.glass-container {
+    display: block;
+    max-width: 72vw;
+    margin-top: 10vh;
+    margin-bottom: 30px;
+    background: rgba(0, 0, 0, 0.56);
+    padding: 50px;
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(11.6px);
+    -webkit-backdrop-filter: blur(11.6px);
 }
 
-.nav-links {
+.logo {
+    display: inline-block;
+    font-size: 30px;
+    font-weight: 600;
+    margin-top: -10px;
+}
+
+ul.nav-links {
+    margin: 0;
+    float: right;
+    display: flex;
     list-style: none;
-    display: flex;
-    align-items: center;
-    gap: 3rem;
 }
 
-.link a::after {
-    content: "";
-    position: absolute;
-    height: 10px;
-    width: 0;
-    bottom: 0;
-    left: 0;
-    background-color: #e6e6ee;
+li.nav-links {
+    display: inline-block;
+    margin-left: 30px;
+    font-size: 17px;
+    font-weight: 300;
+}
+
+.contant {
+    display: flex;
+    width: 100%;    
+}
+
+.main {
+    margin-top: 10vh;
+    display: inline-block;
+    padding: 20px;
+}
+
+.main h2{
+    font-size: 35px;
+}
+
+.main p{
+    font-size: 16px;
+    line-height: 23px;
+}
+
+button {
+    margin-top: 10px;
+    width:  100%;
+    height: 40px;
+    font-size: 15px;
+    color: #fff;
+    background-color: transparent;
+    border: 1px solid #fff;
+    border-radius: 10px;
+    cursor: pointer;
     transition: all 0.3s ease;
 }
 
-.link a:hover::after{
-    width: 70%;
+button:hover {
+    border-color: #2668db;
+    background-color: #2668db;
 }
 
-.btn {
-    padding: 1rem 2rem;
-    font-size: 1rem;
-    color: aliceblue;
-    background-color: rgb(102, 139, 241);
-    border-radius: 5px;
-    cursor: pointer;
-    transition: all 0.3 ease;
-}
-
-.btn:hover{
-    background-color: #38388f;
-}
-
-footer {
-    background-color: #333;
-    color: #fff;
-    padding: 2px;
-    text-align: center;
-    margin-top: 30px;
-}
-
-footer ul {
-    text-align: center;
-    list-style: none;
-    padding: 0;
-    margin: 0;
+.image-wrapper {
     display: flex;
+    margin-top: 5vh;
+    position: relative;
 }
 
-footer li {
-    display: inline-block;
-    margin: 0 10px;
-    
+.image-wrapper img{
+    max-width: 500px;
 }
 
+.attrebute {
+    position: absolute;
+    bottom: 20px;
+    right: 0;
+    font-size: 12px;
+}
 
+@media screen and (max-width: 1075px) {
+    .contant {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 720px) {
+    .logo{
+        font-size: 22px;
+    }
+    li.nav-links{
+        font-size: 13px;
+    }
+    .main h2{
+        font-size: 28px;
+    }
+    .main p{
+        font-size: 15px;
+    }
+    button{
+        font-size: 13px;
+    }
+    .image-wrapper img{
+        max-width: 400px;
+    }
+}
 
