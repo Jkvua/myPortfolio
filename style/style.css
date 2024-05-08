@@ -147,3 +147,18 @@ button:hover {
     }
 }
 
+.icons-botao .icones-social  {
+    margin: 0;
+    float: left;
+    position: relative;
+    display: flex;
+    list-style: none;
+}
+
+.icones-social i {
+    display: inline-block;
+    margin-left: 30px;
+    font-size: 17px;
+    font-weight: 300;
+}
+
