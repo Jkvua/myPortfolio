@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Jersey+25+Charted&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
 * {
-    font-family: 'Bree Serif', 'Varela Round', 'Figtree';
+    font-family: "kanit", "sans-serif" ;
 }
 
 a {
@@ -37,7 +37,7 @@ body {
     margin-top: 10vh;
     margin-bottom: 30px;
     background: rgba(0, 0, 0, 0.56);
-    padding: 50px;
+    padding: 70px;
     border-radius: 16px;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(11.6px);
@@ -66,12 +66,12 @@ li.nav-links {
 }
 
 .infos {
-    padding: 0 148px;
+    padding: 0 120px;
     display: flex;
     align-items: center;
     justify-content: space-between;
     gap: 50px;
-    height: calc(100vh - 80px);
+    height: calc(100vh - 58px);
 }
 
 .infos .infos-me h3{
@@ -79,6 +79,48 @@ li.nav-links {
     margin-bottom: 40px;
 }
 
-.infos img{
-    width: 400px;
+.infos .infos-me h2{
+    font-size: 22px;
+    margin-bottom: 20px;
 }
+
+.infos .infos-me p{
+    font-size: 16px;
+    margin-bottom: 45px;
+    width: 100%;
+}
+
+
+.infos img{
+    width: 300px;
+    height: 300px;
+    border-radius: 140px;
+    
+}
+
+button {
+    margin-top: 10px;
+    width: 97%;
+    height: 35px;
+    font-size: 15px;
+    color: #fff;
+    background-color: transparent;
+    border: 1px solid #fff;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    border-color: #2668db;
+    background-color: #2668db;
+}
+
+.icons-tex i {
+    font-size: 40px !important;
+}
+
+.formacao {
+    
+}
+
