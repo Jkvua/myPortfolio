@@ -85,9 +85,8 @@ li.nav-links {
 }
 
 .infos .infos-me p{
-    font-size: 16px;
-    margin-bottom: 45px;
-    width: 100%;
+    font-size: 17px;
+    line-height: 23px;
 }
 
 
@@ -95,6 +94,7 @@ li.nav-links {
     width: 300px;
     height: 300px;
     border-radius: 140px;
+    margin-bottom: 20px;
     
 }
 
@@ -118,17 +118,164 @@ button:hover {
 
 .icons-tex i {
     font-size: 47px !important;
-    margin-top: 3vw;
-    margin-left: 20vh;
+    margin: 10px;
+    /*margin-left: 20vh;*/
+}
+
+.ferrtac {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    max-width: 100%;
+    overflow: hidden;
+    margin: 20px auto 0 auto;
 }
 
 .ferrtac h4 {
-    margin-left: 20vh;
+    text-align: center;
+    /*margin-left: 20vh;*/
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.icons-tex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    width: 100%;
 }
 
 .rus {
     color: #09101b;
     font-size: 20px;
+}
+
+
+@media screen and (max-width: 1075px) {
+    .principal {
+        flex-direction: column;
+        padding: 0 20px;
+        align-items: flex-start;
+    }
+
+    .pag-principal{
+        overflow: hidden;
+    }
+
+    .logo{
+        font-size: 22px;
+    }
+    li.nav-links{
+        font-size: 13px;
+    }
+    .infos {
+        padding: 0 20px;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    .infos .infos-me {
+        max-width: 100%;
+        flex: 1 1 100%;
+    }
+
+    .infos .infos-me h3, .infos .infos-me h2{
+        font-size: 17px;
+    }
+    .infos .infos-me p{
+        font-size: 12px;
+    }
+    button{
+        font-size: 13px;
+    }
+
+    .infos img{
+        width: 100%;
+        max-width: 300px;
+        height: auto;
+        margin-bottom: 20px;
+       
+    }
+
+    .img-me img{
+        max-width: 200px;
+    }
+    .formacao ul{
+        flex-direction: column;
+    }
+    
+    .icons-tex i{
+        flex-direction: column;
+    }
+
+    .ferrtac h4 {
+       font-size: 16px;
+    }
+
+    .icons-tex i {
+        font-size: 30px;
+        margin: 5px;
+    }
+    
+}
+
+@media screen and (max-width: 720px) {
+    .logo{
+        font-size: 22px;
+    }
+    li.nav-links{
+        font-size: 13px;
+    }
+    .infos {
+        padding: 0 20px;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    .infos .infos-me {
+        max-width: 100%;
+        flex: 1 1 100%;
+    }
+
+    .infos .infos-me h3, .infos .infos-me h2{
+        font-size: 17px;
+    }
+    .infos .infos-me p{
+        font-size: 12px;
+    }
+    button{
+        font-size: 13px;
+    }
+
+    .infos img{
+        width: 100%;
+        max-width: 300px;
+        height: auto;
+        margin-bottom: 20px;
+       
+    }
+
+    .img-me img{
+        max-width: 200px;
+    }
+    .formacao ul{
+        flex-direction: column;
+    }
+    
+    .icons-tex i{
+        flex-direction: column;
+    }
+
+    .ferrtac h4 {
+       font-size: 16px;
+    }
+
+    .icons-tex i {
+        font-size: 30px;
+        margin: 5px;
+    }
 }
 
 
