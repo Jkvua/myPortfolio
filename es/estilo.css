@@ -193,29 +193,29 @@ button:hover {
 
     .infos img{
         width: 100%;
-        max-width: 300px;
+        max-width: 200px;
         height: auto;
-        margin-bottom: 20px;
+        margin-bottom: 40px;
        
     }
 
     .img-me img{
-        max-width: 200px;
+        max-width: 300px;
     }
     .formacao ul{
         flex-direction: column;
     }
-    
-    .icons-tex i{
-        flex-direction: column;
-    }
 
+    .ferrtac{
+        padding: 10px;
+    }
+    
     .ferrtac h4 {
        font-size: 16px;
     }
 
     .icons-tex i {
-        font-size: 30px;
+        font-size: 25px;
         margin: 5px;
     }
     
@@ -264,17 +264,17 @@ button:hover {
         flex-direction: column;
     }
     
-    .icons-tex i{
-        flex-direction: column;
+    .ferrtac {
+        padding: 5px;
     }
 
     .ferrtac h4 {
-       font-size: 16px;
+       font-size: 14px;
     }
 
     .icons-tex i {
-        font-size: 30px;
-        margin: 5px;
+        font-size: 20px;
+        margin: 3px;
     }
 }
 
