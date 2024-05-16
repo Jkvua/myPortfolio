@@ -1,3 +1,4 @@
+
 function barraFerramentas() {
   Swal.fire({
     title: "Conheça-me",
@@ -26,7 +27,3 @@ function barraInfo() {
     confirmButtonText:'<a class="text">Fechar</a>'
   });
 }
-
-//function navegarParaUrl(){
-  //window.location.href = "https://WWW.camila/myPortfolio";
-//}
