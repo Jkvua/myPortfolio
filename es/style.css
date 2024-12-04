@@ -2,7 +2,7 @@
 
 .rojo {
     color: #09101b;
-    font-size: 20px;
+    font-size: 15%;
 }
 
 * {
@@ -56,19 +56,29 @@ body {
     margin-top: -10px;
 }
 
-ul.nav-links {
+/* ul.nav-links {
     margin: 0;
     float: right;
     display: flex;
     list-style: none;
+} */
+
+.nav-links{
+    margin: 0;
+    display: flex;
+    float: right; 
+    list-style: none;
+    margin-left: 30px;
+    font-size: 20px;
+    font-weight: 300;
 }
 
-li.nav-links {
+/* li.nav-links {
     display: inline-block;
     margin-left: 30px;
     font-size: 17px;
     font-weight: 300;
-}
+} */
 
 .contant {
     display: flex;
@@ -116,6 +126,7 @@ button:hover {
 
 .image-wrapper img{
     max-width: 500px;
+    display: flex;
 }
 
 .attrebute {
@@ -125,7 +136,34 @@ button:hover {
     font-size: 12px;
 }
 
-@media screen and (max-width: 1075px) {
+.icons-botao .icones-social  {
+    margin: 0;
+    float: left;
+    position: relative;
+    display: flex;
+    list-style: none;
+}
+
+.icones-social i {
+    display: inline-block;
+    margin-left: 30px;
+    font-size: 17px;
+    font-weight: 300;
+}
+
+@media screen and (max-width: 999px){
+    /* classes gerais */
+    .contant, .image-wrapper,.image-wrapper img{
+        flex-direction: column;
+    }
+    /* cabeçalho */
+    .nav-links, .botao-class{
+        display: none;
+    }
+}
+
+
+/* @media screen and (max-width: 1075px) {
     .contant {
         flex-direction: column;
     }
@@ -150,20 +188,7 @@ button:hover {
     .image-wrapper img{
         max-width: 400px;
     }
-}
+} */
 
-.icons-botao .icones-social  {
-    margin: 0;
-    float: left;
-    position: relative;
-    display: flex;
-    list-style: none;
-}
 
-.icones-social i {
-    display: inline-block;
-    margin-left: 30px;
-    font-size: 17px;
-    font-weight: 300;
-}
 
