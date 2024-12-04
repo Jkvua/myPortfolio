@@ -51,52 +51,70 @@ body {
     margin-top: -10px;
 }
 
-ul.nav-links {
+/* ul.nav-links {
     margin: 0;
     float: right;
     display: flex;
     list-style: none;
-}
+} */
 
-li.nav-links {
-    display: inline-block;
+.nav-links {
+    margin: 0;
     margin-left: 30px;
+    float: right;
+    display: flex;
+    list-style: none;
     font-size: 17px;
     font-weight: 300;
 }
 
+
+
+/* li.nav-links {
+    display: inline-block;
+    margin-left: 30px;
+    font-size: 17px;
+    font-weight: 300;
+} */
+
+/* arrumar isso  */
+
 .infos {
-    padding: 0 120px;
+    margin-top: 10vh;
     display: flex;
+    padding: 20px;
     align-items: center;
+    /* padding: 0 120px;
+    display: flex;
+    
     justify-content: space-between;
     gap: 50px;
-    height: calc(100vh - 58px);
+    height: calc(100vh - 58px); */
 }
 
-.infos .infos-me h3{
+.infos-me h3{
     font-size: 44px;
     margin-bottom: 40px;
 }
 
-.infos .infos-me h2{
+.infos-me h2{
     font-size: 22px;
     margin-bottom: 20px;
 }
 
-.infos .infos-me p{
+.infos-me p{
     font-size: 17px;
     line-height: 23px;
 }
 
-
-.infos img{
+.img-me img{
+    display: flex;
     width: 300px;
     height: 300px;
-    border-radius: 140px;
-    margin-bottom: 20px;
-    
+    border-radius: 130px;
+    margin-bottom: 40px;
 }
+
 
 button {
     margin-top: 10px;
@@ -153,7 +171,28 @@ button:hover {
 }
 
 
-@media screen and (max-width: 1075px) {
+@media screen and (max-width:1300px){
+    .infos, .principal, .infos img {
+        flex-direction: column-reverse;
+    }
+
+    .img-me img {
+        flex-direction: column;
+        width: 110%;
+        height: 110%;
+    }
+    
+    .nav-links, .butao-class{
+        display: none;
+    }
+
+    .formacao {
+        flex-direction: row;
+    }
+
+} 
+
+ /* @media screen and (max-width: 1075px) {
     .principal {
         flex-direction: column;
         padding: 0 20px;
@@ -276,6 +315,6 @@ button:hover {
         font-size: 20px;
         margin: 3px;
     }
-}
+} 
 
-
+ */
